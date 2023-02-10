@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="/style/index.css" />
+        <script src="/script/validation.js">
+        </script>
+    </head>
+    <body>
+        <div class="contain">
+            <div class="wrapper">                
+                <div class="form">
+                    <form name='registration' onSubmit="return formValidation()">
+                    <p>
+                        <input class ="data" type="text" name="fname" placeholder="First name">
+                    </p>
+                    <p>
+                        <input class ="data" type="text" name="lname" placeholder="Last name">
+                    </p>
+                    <p>
+                        <input class ="data" type="text" placeholder="DOB">
+                    </p>
+                    <p>
+                        <select class="dropdown">
+                            <option value="select">Gender</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                        </select>
+                    </p>
+                    <p class = "email">
+                        <input class ="data" type="text" name="emailid" placeholder="Email">
+                    </p>
+                    <p class = "email">
+                        <input class ="data" type="text" name="phonenumber" placeholder="Phone number">
+                    </p>
+                    <p class="address">
+                        <textarea name="" id="" cols="30" rows="7" placeholder="Address"></textarea>
+                    </p>
+                    <div class="display"> 
+                        <label>Indian  ? </label> 
+                        <label class="switch">
+                        <input class ="data" type="checkbox">
+                        <span class="slider round">
+                        </span>
+                        </label>
+                    </div>
+                    </p>
+                    <p class = "email">
+                        <input class ="data" type="text" name="password" placeholder="PassWord">
+                    </p>
+                    <p class = "email">
+                        <input class ="data" type="text" name="ConfirmpassWord" placeholder="Confirm PassWord">
+                    </p>
+                    <div >
+                        <input class="tacbox" id="tac" type="checkbox" name="tac"/>
+                        <label for="tac"> All the above mentioned informations are correct</label>
+                    </div>
+                    <p>
+                        <button id ="submit" name="submit" value="submit" onClick="window.location.href='./page.html;'">Create account</button>
+                    </p>
+                    <p class="link">Already registered?
+                    <a  href="https://www.naukri.com/nlogin/login">Login
+                    </a>
+                    </p>
+                    </form>
+                </div>
+                <div>
+                    <img
+                    src="/image/images.jpg"
+                    alt="register"
+                    style="float: right; width: 300px; height: 300px"
+                    />
+                </div>
+            </div>
+        </div>
+  </body>
+</html>
